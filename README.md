@@ -1,5 +1,5 @@
 ## KMerFineRabbit ('KFR')-- Reference-indepdendent manipulation of NGS Datasets
-+ Version ar11 02_07_2024
++ Version as02 03_16_2024
 + ->Fuction: KFR Filters an input NGS dataset by keeping/removing reads with k-mer that match a "Filter" dataset
 +  - KFR is used to discover reads within a metagenomic dataset that either share homology with a second
 +  - dataset or lack such homology.  Datasets can be reference genomes or relatively large fastq/fasta read files
@@ -25,6 +25,7 @@
 +  - KLen=<32> : is the Kmer length (default 32, realistically can be between 16 and read-length)
 +  - SearchCadence=<1> : Setting this to 1 searches every k-mer when filtering the substrate file.  Setting to a higher value n searches only every nth kmer
 +  - NoNs=<False> : Setting this to true ignores any read with an N
++  - MinReadLen: <default: KLen>: Output only reads of this length or greater. For paired reads, both must be at least this long
 +  - OutFile=<file name assigned by program if not specified> : Allows user to specify base filenames for data output 
 +  - ReportGranularity=<100000> : How often to report progress (default every 100000 reads)
 +  - MaxReadsPerFile1=<0> : Max number to check for each substrate file (default is zero (all reads)
