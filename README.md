@@ -1,5 +1,5 @@
 ## KMerFineRabbit ('KFR')-- Reference-indepdendent manipulation of NGS Datasets
-+ Version as02 03_16_2024
++ Version at00 03_24_2024
 + ->Fuction: KFR Filters an input NGS dataset by keeping/removing reads with k-mer that match a "Filter" dataset
 +  - KFR is used to discover reads within a metagenomic dataset that either share homology with a second
 +  - dataset or lack such homology.  Datasets can be reference genomes or relatively large fastq/fasta read files
